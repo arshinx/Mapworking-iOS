@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="2607.1999999999998" y="-319.79010494752629"/>
         </scene>
-        <!--Table View Controller-->
+        <!--On The Map-->
         <scene sceneID="yl1-5U-KDN">
             <objects>
                 <tableViewController id="0wS-eS-q82" sceneMemberID="viewController">
@@ -64,7 +64,13 @@
                             <outlet property="delegate" destination="0wS-eS-q82" id="YsZ-IL-MmV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="X8b-Fq-prk"/>
+                    <navigationItem key="navigationItem" title="On The Map" id="X8b-Fq-prk">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fz9-S0-GU2"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="icon_refresh" id="wbw-Bp-7hT"/>
+                            <barButtonItem image="icon_pin" id="9X8-6Z-j7S"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihg-s0-c6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
