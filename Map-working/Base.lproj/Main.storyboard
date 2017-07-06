@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,6 +31,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="On The Map" id="Ypw-Aw-RId">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="okn-up-bVl"/>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" id="JYR-nR-iLU"/>
+                            <barButtonItem image="icon_pin" id="muf-4d-qOZ"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -194,6 +199,7 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="icon_pin" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
         <image name="second" width="30" height="30"/>
     </resources>
