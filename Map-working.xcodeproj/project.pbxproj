@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		735F14231F0C91AE0094C2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F14221F0C91AE0094C2A1 /* AppDelegate.swift */; };
-		735F14251F0C91AE0094C2A1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F14241F0C91AE0094C2A1 /* FirstViewController.swift */; };
 		735F14271F0C91AE0094C2A1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F14261F0C91AE0094C2A1 /* SecondViewController.swift */; };
 		735F142A1F0C91AE0094C2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735F14281F0C91AE0094C2A1 /* Main.storyboard */; };
 		735F142C1F0C91AE0094C2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735F142B1F0C91AE0094C2A1 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		735F141F1F0C91AE0094C2A1 /* Map-working.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map-working.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		735F14221F0C91AE0094C2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		735F14241F0C91AE0094C2A1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		735F14261F0C91AE0094C2A1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		735F14291F0C91AE0094C2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		735F142B1F0C91AE0094C2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				735F14221F0C91AE0094C2A1 /* AppDelegate.swift */,
-				735F14241F0C91AE0094C2A1 /* FirstViewController.swift */,
 				73BFBF411F0E201C00295179 /* LoginViewController.swift */,
 				73BFBF431F0E210E00295179 /* MapViewController.swift */,
 				73BFBF451F0E211E00295179 /* AddPinViewController.swift */,
@@ -153,7 +150,6 @@
 				735F14231F0C91AE0094C2A1 /* AppDelegate.swift in Sources */,
 				73BFBF441F0E210E00295179 /* MapViewController.swift in Sources */,
 				73BFBF461F0E211E00295179 /* AddPinViewController.swift in Sources */,
-				735F14251F0C91AE0094C2A1 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
