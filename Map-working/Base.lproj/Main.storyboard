@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" title="On The Map" id="Ypw-Aw-RId">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="okn-up-bVl"/>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" id="JYR-nR-iLU"/>
+                            <barButtonItem image="icon_refresh" id="JYR-nR-iLU"/>
                             <barButtonItem image="icon_pin" id="muf-4d-qOZ"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -200,6 +200,7 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="icon_pin" width="24" height="24"/>
+        <image name="icon_refresh" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
         <image name="second" width="30" height="30"/>
     </resources>
