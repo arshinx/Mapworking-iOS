@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--On The Map-->
+        <!--MapVC-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="MapViewController" customModule="Map_working" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MapVC" id="9pv-A4-QxB" customClass="MapViewController" customModule="Map_working" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="2607.1999999999998" y="-319.79010494752629"/>
         </scene>
-        <!--On The Map-->
+        <!--ListVC-->
         <scene sceneID="yl1-5U-KDN">
             <objects>
-                <tableViewController id="0wS-eS-q82" sceneMemberID="viewController">
+                <tableViewController title="ListVC" id="0wS-eS-q82" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fKg-Oa-3q2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,6 +376,6 @@
         <image name="logo-u" width="62" height="62"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tvI-dF-fNk"/>
+        <segue reference="EXo-LP-8dP"/>
     </inferredMetricsTieBreakers>
 </document>
