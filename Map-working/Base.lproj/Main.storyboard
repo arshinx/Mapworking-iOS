@@ -33,13 +33,35 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="okn-up-bVl"/>
                         <rightBarButtonItems>
                             <barButtonItem image="icon_refresh" id="JYR-nR-iLU"/>
-                            <barButtonItem image="icon_pin" id="muf-4d-qOZ"/>
+                            <barButtonItem image="icon_pin" id="muf-4d-qOZ">
+                                <connections>
+                                    <segue destination="6dL-lL-ksG" kind="presentation" id="Y2m-Ig-OeA"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2607.1999999999998" y="-319.79010494752629"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xfo-El-bgB">
+            <objects>
+                <viewController id="6dL-lL-ksG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJ0-VA-Yps"/>
+                        <viewControllerLayoutGuide type="bottom" id="U8Q-wy-lFd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hKd-DO-5mD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0du-Ns-9IN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3375" y="0.0"/>
         </scene>
         <!--On The Map-->
         <scene sceneID="yl1-5U-KDN">
@@ -68,7 +90,11 @@
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="fz9-S0-GU2"/>
                         <rightBarButtonItems>
                             <barButtonItem image="icon_refresh" id="wbw-Bp-7hT"/>
-                            <barButtonItem image="icon_pin" id="9X8-6Z-j7S"/>
+                            <barButtonItem image="icon_pin" id="9X8-6Z-j7S">
+                                <connections>
+                                    <segue destination="6dL-lL-ksG" kind="presentation" id="dLX-XH-u2Z"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
@@ -212,4 +238,7 @@
         <image name="icon_refresh" width="24" height="24"/>
         <image name="logo-u" width="62" height="62"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dLX-XH-u2Z"/>
+    </inferredMetricsTieBreakers>
 </document>
