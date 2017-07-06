@@ -14,6 +14,8 @@
 		735F142C1F0C91AE0094C2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735F142B1F0C91AE0094C2A1 /* Assets.xcassets */; };
 		735F142F1F0C91AE0094C2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735F142D1F0C91AE0094C2A1 /* LaunchScreen.storyboard */; };
 		73BFBF421F0E201C00295179 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFBF411F0E201C00295179 /* LoginViewController.swift */; };
+		73BFBF441F0E210E00295179 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFBF431F0E210E00295179 /* MapViewController.swift */; };
+		73BFBF461F0E211E00295179 /* AddPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFBF451F0E211E00295179 /* AddPinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		735F142E1F0C91AE0094C2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		735F14301F0C91AE0094C2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73BFBF411F0E201C00295179 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		73BFBF431F0E210E00295179 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		73BFBF451F0E211E00295179 /* AddPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				735F14221F0C91AE0094C2A1 /* AppDelegate.swift */,
 				735F14241F0C91AE0094C2A1 /* FirstViewController.swift */,
 				73BFBF411F0E201C00295179 /* LoginViewController.swift */,
+				73BFBF431F0E210E00295179 /* MapViewController.swift */,
+				73BFBF451F0E211E00295179 /* AddPinViewController.swift */,
 				735F14261F0C91AE0094C2A1 /* SecondViewController.swift */,
 				735F14281F0C91AE0094C2A1 /* Main.storyboard */,
 				735F142B1F0C91AE0094C2A1 /* Assets.xcassets */,
@@ -145,6 +151,8 @@
 				73BFBF421F0E201C00295179 /* LoginViewController.swift in Sources */,
 				735F14271F0C91AE0094C2A1 /* SecondViewController.swift in Sources */,
 				735F14231F0C91AE0094C2A1 /* AppDelegate.swift in Sources */,
+				73BFBF441F0E210E00295179 /* MapViewController.swift in Sources */,
+				73BFBF461F0E211E00295179 /* AddPinViewController.swift in Sources */,
 				735F14251F0C91AE0094C2A1 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
