@@ -49,7 +49,7 @@
         <!--ListVC-->
         <scene sceneID="yl1-5U-KDN">
             <objects>
-                <tableViewController title="ListVC" id="0wS-eS-q82" sceneMemberID="viewController">
+                <tableViewController title="ListVC" id="0wS-eS-q82" customClass="ListTableViewController" customModule="Map_working" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fKg-Oa-3q2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
