@@ -12,5 +12,10 @@ class Udacity: NSObject {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    // Login
+    func login() {
+        
+    }
+    
     
 }
