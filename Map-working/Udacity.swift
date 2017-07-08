@@ -13,7 +13,7 @@ class Udacity: NSObject {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // Login
-    func login(username: String, password: String, completion: @escaping (_ success: Bool,_ errormsg: String?, _ error: NSError?) -> Void) {
+    func login(username: String, password: String, completion: @escaping (_ success: Bool,_ errorMessage: String?, _ error: NSError?) -> Void) {
         
         let request = NSMutableURLRequest(url: NSURL(string: "https://www.udacity.com/api/session") as! URL)
         request.httpMethod = "POST"
