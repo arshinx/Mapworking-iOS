@@ -15,6 +15,8 @@ class Udacity: NSObject {
     // Login
     func login(username: String, password: String, completion: @escaping (_ success: Bool,_ errormsg: String?, _ error: NSError?) -> Void) {
         
+        let request = NSMutableURLRequest(url: NSURL(string: "https://www.udacity.com/api/session") as! URL)
+        
     }
     
     
