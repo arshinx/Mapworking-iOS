@@ -13,7 +13,7 @@ class Udacity: NSObject {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // Login
-    func login() {
+    func login(username: String, password: String, completion: @escaping (_ success: Bool,_ errormsg: String?, _ error: NSError?) -> Void) {
         
     }
     
