@@ -23,6 +23,10 @@ class Udacity: NSObject {
         
         let session = URLSession.shared
         
+        let task = session.dataTask(with: request as URLRequest) { (data, res, error) in
+            
+        }
+        
     }
     
     
