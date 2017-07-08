@@ -10,4 +10,6 @@ import UIKit
 
 class Udacity: NSObject {
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
 }
