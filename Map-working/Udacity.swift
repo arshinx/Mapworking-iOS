@@ -21,6 +21,8 @@ class Udacity: NSObject {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = "{\"udacity\": {\"username\": \"\(username)\", \"password\": \"\(password)\"}}".data(using: String.Encoding.utf8)
         
+        let session = URLSession.shared
+        
     }
     
     
