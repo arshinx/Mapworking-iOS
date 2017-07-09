@@ -43,7 +43,10 @@ class Udacity: NSObject {
                 return
             }
             
-            
+            guard let data = data else {
+                handleError(error: "No Data Was Returned By The Request!", errorMessage: Errors.CantLogin)
+                return
+            }
 
         }
         
