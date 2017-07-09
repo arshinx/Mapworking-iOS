@@ -25,6 +25,11 @@ class Udacity: NSObject {
         
         let task = session.dataTask(with: request as URLRequest) { (data, res, error) in
             
+            func handleError(error: String, errorMessage: String) {
+                let userInfo = [NSLocalizedDescriptionKey: error]
+                completion(false, errorMessage, NSError(domain: "login", code: 1, userInfo: userInfo))
+            }
+
         }
         
     }
