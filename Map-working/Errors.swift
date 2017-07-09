@@ -10,5 +10,6 @@ import Foundation
 
 struct Error {
     let DataError = "Error Getting Data!"
+    let MapError = "Failed To Geocode!"
     
 }
