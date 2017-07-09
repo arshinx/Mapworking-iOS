@@ -15,7 +15,7 @@ struct Error {
     let UpdateError = "Failed To Update Location!"
     let InvalidLink = "Invalid Link!"
     let MissingLink = "Need To Enter Link!"
-    let CantLogin = "Network Connection Is Offline!"
+    let LoginFailed = "Network Connection Is Offline!"
     let InvalidEmail = "Invalid Email Or Password!"
     
 }
