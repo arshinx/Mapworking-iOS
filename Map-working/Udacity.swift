@@ -47,6 +47,11 @@ class Udacity: NSObject {
                 handleError(error: "No Data Was Returned By The Request!", errorMessage: Errors.CantLogin)
                 return
             }
+            
+            // MARK: Data Processing
+            
+            let stringData = String(data: data, encoding: String.Encoding.utf8)
+            print(stringData ?? "Done!")
 
         }
         
