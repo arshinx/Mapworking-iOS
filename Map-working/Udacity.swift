@@ -37,10 +37,13 @@ class Udacity: NSObject {
                 completion(false, errorMessage, NSError(domain: "login", code: 1, userInfo: userInfo))
             }
             
+            //Errror status outside rangge of 201 and 299
             guard let statusCode = (res as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
                 handleError(error: "Your request returned a status code other than 2xx!", errorMessage: Errors.InvalidError)
                 return
             }
+            
+            
 
         }
         
