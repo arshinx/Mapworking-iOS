@@ -52,6 +52,8 @@ class Udacity: NSObject {
             
             let stringData = String(data: data, encoding: String.Encoding.utf8)
             print(stringData ?? "Done!")
+            
+            let newData = data.subdata(in: Range(uncheckedBounds: (5, data.count)))
 
         }
         
