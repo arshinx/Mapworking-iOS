@@ -26,6 +26,7 @@ class Udacity: NSObject {
         let session = URLSession.shared
         
         // Errors
+        // let errors = Errors()
         
         // Task
         let task = session.dataTask(with: request as URLRequest) { (data, res, error) in
@@ -37,7 +38,7 @@ class Udacity: NSObject {
             }
             
             guard let statusCode = (res as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
-                handleError(error: "Your request returned a status code other than 2xx!", errorMessage: Errors.InvalidEmail)
+                handleError(error: "Your request returned a status code other than 2xx!", errorMessage: Errors.InvalidError)
                 return
             }
 
