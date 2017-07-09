@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Errors {
-    
+struct Error {
+    let DataError = "Error Getting Data!"
     
 }
