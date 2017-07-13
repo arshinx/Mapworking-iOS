@@ -28,6 +28,6 @@ class Errors: NSObject {
 // Mark: Alerts
 class Alerts: NSObject {
     
-    
+    static let LoginAlertTitle = "Login Error"
     
 }
