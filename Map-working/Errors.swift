@@ -9,7 +9,9 @@
 import Foundation
 import UIKit
 
+// Mark: Errors
 class Errors: NSObject {
+    
     let DataError = "Error Getting Data!"
     let MapError = "Failed To Geocode!"
     let UpdateError = "Failed To Update Location!"
