@@ -24,3 +24,10 @@ class Errors: NSObject {
     static let fetchingFailed = "Unable to fetch student locations. Please try again after some time or check your internet conectivity."
     
 }
+
+// Mark: Alerts
+class Alerts: NSObject {
+    
+    
+    
+}
