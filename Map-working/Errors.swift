@@ -29,5 +29,6 @@ class Errors: NSObject {
 class Alerts: NSObject {
     
     static let LoginAlertTitle = "Login Error"
+    static let LogoutAlertTitle = "Logout Error"
     
 }
