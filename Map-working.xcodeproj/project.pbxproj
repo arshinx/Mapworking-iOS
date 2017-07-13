@@ -56,6 +56,15 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		731569341F172DC50028C20D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73A8994C1F12A89B00569B70 /* Errors.swift */,
+				7380FEA21F117655000DB598 /* Udacity.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		735F14161F0C91AE0094C2A1 = {
 			isa = PBXGroup;
 			children = (
@@ -76,9 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				735F14221F0C91AE0094C2A1 /* AppDelegate.swift */,
-				73A8994C1F12A89B00569B70 /* Errors.swift */,
+				731569341F172DC50028C20D /* Models */,
 				731569331F172DA30028C20D /* View Controllers */,
-				7380FEA21F117655000DB598 /* Udacity.swift */,
 				735F14281F0C91AE0094C2A1 /* Main.storyboard */,
 				735F142B1F0C91AE0094C2A1 /* Assets.xcassets */,
 				735F142D1F0C91AE0094C2A1 /* LaunchScreen.storyboard */,
