@@ -45,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		731569331F172DA30028C20D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73BFBF411F0E201C00295179 /* LoginViewController.swift */,
+				73BFBF431F0E210E00295179 /* MapViewController.swift */,
+				73BFBF451F0E211E00295179 /* AddPinViewController.swift */,
+				73BFBF471F0E231800295179 /* ListTableViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		735F14161F0C91AE0094C2A1 = {
 			isa = PBXGroup;
 			children = (
@@ -66,10 +77,7 @@
 			children = (
 				735F14221F0C91AE0094C2A1 /* AppDelegate.swift */,
 				73A8994C1F12A89B00569B70 /* Errors.swift */,
-				73BFBF411F0E201C00295179 /* LoginViewController.swift */,
-				73BFBF431F0E210E00295179 /* MapViewController.swift */,
-				73BFBF451F0E211E00295179 /* AddPinViewController.swift */,
-				73BFBF471F0E231800295179 /* ListTableViewController.swift */,
+				731569331F172DA30028C20D /* View Controllers */,
 				7380FEA21F117655000DB598 /* Udacity.swift */,
 				735F14281F0C91AE0094C2A1 /* Main.storyboard */,
 				735F142B1F0C91AE0094C2A1 /* Assets.xcassets */,
