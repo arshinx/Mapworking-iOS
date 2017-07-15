@@ -109,6 +109,15 @@ class Contants: NSObject {
         struct Cookies {
             static let XSRF_Token = "XSRF-TOKEN"
         }
+        
+        // Errors
+        struct Errors {
+            static let loginError = "User was Unable to Login. Please try again later."
+            static let logoutError = "User was Unable to Logout. Please try again later."
+            static let noUserData = "Not able to access user data."
+            
+        }
+
 
     }
 }
