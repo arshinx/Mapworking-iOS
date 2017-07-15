@@ -9,5 +9,9 @@
 import Foundation
 
 class SessionManager {
+    
+    // MARK: Variables
+    private let session: URLSession!
+
 
 }
