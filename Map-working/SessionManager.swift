@@ -15,7 +15,7 @@ struct URLData {
     let Path: String
 }
 
-enum HTTPMethod {
+enum HTTPMethod: String {
     case GET, PUT, POST, DELETE
 }
 
@@ -42,7 +42,20 @@ class SessionManager {
 extension SessionManager {
     
     //MARK: Data Task Request
-    func initiateRequest(Url: URL, requestMethod: HTTPMethod, requestHeaders: [String:String]? = nil, requestBody: [String:AnyObject]? = nil, responseClosure: @escaping (NSData?, String?) -> Void){
+    func initiateRequest(Url: URL, requestMethod: HTTPMethod, requestHeaders: [String:String]? = nil,
+                         requestBody: [String:AnyObject]? = nil,
+                         responseClosure: @escaping (NSData?, String?) -> Void){
+        
+        
+        
     }
     
 }
+
+
+
+
+
+
+
+
