@@ -89,8 +89,15 @@ class SessionManager {
         var components = URLComponents()
         components.scheme = apiUrlData.scheme
         components.host = apiUrlData.host
-        components.path = apiUrlData.path + (apiMethod ?? "") + (pathExtension ?? "")
+        components.path = apiUrlData.Path + (apiMethod ?? "") + (pathExtension ?? "")
         
+        // Component's Query Items
+        if let parameters = parameters {
+            components.queryItems = [URLQueryItem]()
+            for (key, value) in parameters {
+                
+            }
+        }
     }
     
 }
