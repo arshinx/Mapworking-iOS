@@ -104,6 +104,11 @@ class Contants: NSObject {
             static let status = "status"
             static let error = "error"
         }
+        
+        // Cookies
+        struct Cookies {
+            static let XSRF_Token = "XSRF-TOKEN"
+        }
 
     }
 }
