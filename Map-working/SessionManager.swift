@@ -99,7 +99,7 @@ class SessionManager {
                 components.queryItems?.append(queryItem)
             }
         }
-        
+        return components.url!
     }
     
 }
