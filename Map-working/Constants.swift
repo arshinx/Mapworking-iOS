@@ -118,6 +118,8 @@ class Contants: NSObject {
             
         }
 
+        // Signup URL
+        static let signUpURL = "https://www.udacity.com/account/auth#!/signup"
 
     }
 }
