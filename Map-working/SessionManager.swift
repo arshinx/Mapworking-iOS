@@ -16,6 +16,8 @@ class SessionManager {
     
     struct URLData {
         let scheme: String
+        let host: String
+        let Path: String
     }
 
 
