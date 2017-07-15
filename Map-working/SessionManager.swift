@@ -46,7 +46,9 @@ extension SessionManager {
                          requestBody: [String:AnyObject]? = nil,
                          responseClosure: @escaping (NSData?, String?) -> Void){
         
-        
+        // Create request from passed URL
+        var request = URLRequest(url: Url)
+        request.httpMethod = requestMethod.rawValue
         
     }
     
