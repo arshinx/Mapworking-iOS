@@ -61,5 +61,11 @@ class Contants: NSObject {
     // MARK: Udacity
     class UdacityConstants: NSObject {
         
+        // API Components Constants
+        struct APIComponents {
+            static let scheme = "https"
+            static let host = "www.udacity.com"
+            static let path = "/api"
+        }
     }
 }
