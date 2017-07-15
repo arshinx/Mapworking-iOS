@@ -67,5 +67,11 @@ class Contants: NSObject {
             static let host = "www.udacity.com"
             static let path = "/api"
         }
+        
+        // API Methods
+        struct APIMethods {
+            static let session = "/session"
+            static let users = "/users"
+        }
     }
 }
