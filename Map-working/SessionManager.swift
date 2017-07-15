@@ -95,9 +95,11 @@ class SessionManager {
         if let parameters = parameters {
             components.queryItems = [URLQueryItem]()
             for (key, value) in parameters {
-                
+                let queryItem = URLQueryItem(name: key, value: "\(value)")
+                components.queryItems?.append(queryItem)
             }
         }
+        
     }
     
 }
