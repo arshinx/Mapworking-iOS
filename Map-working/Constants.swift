@@ -73,5 +73,12 @@ class Contants: NSObject {
             static let session = "/session"
             static let users = "/users"
         }
+        
+        // API Header Keys
+        struct APIHeaderKeys  {
+            static let accept = "Accept"
+            static let contentType = "Content-Type"
+            static let XSRF_Token = "X-XSRF-TOKEN"
+        }
     }
 }
