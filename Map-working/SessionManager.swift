@@ -41,5 +41,8 @@ class SessionManager {
 // MARK: Request Methods
 extension SessionManager {
     
+    //MARK: Data Task Request
+    func initiateRequest(Url: URL, requestMethod: HTTPMethod, requestHeaders: [String:String]? = nil, requestBody: [String:AnyObject]? = nil, responseClosure: @escaping (NSData?, String?) -> Void){
+    }
     
 }
