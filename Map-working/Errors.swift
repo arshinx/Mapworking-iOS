@@ -52,4 +52,6 @@ class Identifiers: NSObject {
 // MARK: FacebookCredentials
 class FacebookCredentials: NSObject {
     static let AppID = "365362206864879"
-    static let URLSuffix = "onthemap"}
+    static let URLSuffix = "onthemap"
+    static let URLScheme = "fb\(AppID)\(URLSuffix)"
+}
