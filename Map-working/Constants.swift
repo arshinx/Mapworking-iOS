@@ -92,5 +92,18 @@ class Contants: NSObject {
             static let username = "username"
             static let password = "password"
         }
+        
+        // JSON Response Keys
+        struct JSONResponseKeys {
+            static let account = "account"
+            static let key = "key"
+            static let session = "session"
+            static let user = "user"
+            static let firstName = "first_name"
+            static let lastName = "last_name"
+            static let status = "status"
+            static let error = "error"
+        }
+
     }
 }
