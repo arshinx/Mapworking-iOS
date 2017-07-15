@@ -59,4 +59,7 @@ class Contants: NSObject {
     }
     
     // MARK: Udacity
+    class UdacityConstants: NSObject {
+        
+    }
 }
