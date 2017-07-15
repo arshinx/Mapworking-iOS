@@ -15,6 +15,10 @@ struct URLData {
     let Path: String
 }
 
+enum HTTPMethod {
+    case GET, PUT, POST, DELETE
+}
+
 class SessionManager {
     
     // MARK: Variables
@@ -36,5 +40,6 @@ class SessionManager {
 
 // MARK: Request Methods
 extension SessionManager {
+    
     
 }
