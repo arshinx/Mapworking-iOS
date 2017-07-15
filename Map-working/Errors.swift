@@ -28,6 +28,7 @@ class Errors: NSObject {
 // Mark: Notifications
 class Notifications: NSObject {
     static let studentLocationsPinnedDown = "Student Locations Pinned Down"
+    static let studentLocationsPinnedDownError = "Student Locations Pinned Down Error"
 }
 
 // Mark: Alerts
