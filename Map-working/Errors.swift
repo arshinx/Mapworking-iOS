@@ -48,3 +48,8 @@ class Identifiers: NSObject {
     static let studentLocationCell = "StudentLocationCell"
     static let postingSegue = "presentPostingVC"
 }
+
+// MARK: FacebookCredentials
+class FacebookCredentials: NSObject {
+    
+}
