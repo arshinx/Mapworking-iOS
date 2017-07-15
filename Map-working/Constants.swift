@@ -85,5 +85,12 @@ class Contants: NSObject {
         struct APIHeaderValues {
             static let application_json = "application/json"
         }
+        
+        // API Requeest Body Keys
+        struct HTTPBodyKeys {
+            static let udacity = "udacity"
+            static let username = "username"
+            static let password = "password"
+        }
     }
 }
