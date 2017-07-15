@@ -13,6 +13,10 @@ class SessionManager {
     // MARK: Variables
     private let session: URLSession!
     private let apiUrlData: APIUrlData
+    
+    struct URLData {
+        
+    }
 
 
 }
