@@ -46,4 +46,5 @@ class Identifiers: NSObject {
     static let loginSegue = "Login"
     static let dropPinReuse = "DropPin"
     static let studentLocationCell = "StudentLocationCell"
+    static let postingSegue = "presentPostingVC"
 }
