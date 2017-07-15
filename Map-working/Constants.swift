@@ -51,10 +51,12 @@ class Contants: NSObject {
         static let postingSegue = "presentPostingVC"
     }
 
-    // MARK: FacebookCredentials
+    // MARK: Facebook Credentials
     class FacebookCredentials: NSObject {
         static let AppID = "365362206864879"
         static let URLSuffix = "onthemap"
         static let URLScheme = "fb\(AppID)\(URLSuffix)"
     }
+    
+    // MARK: Udacity
 }
