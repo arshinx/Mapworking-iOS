@@ -19,9 +19,18 @@ class SessionManager {
     
     // MARK: Variables
     private let session: URLSession!
-    private let apiUrlData: UrlData
+    private let apiUrlData: URLData
     
-    
+    // Initializer
+    init(apiData: URLData) {
+        
+        // Get your Configuration Object
+        let sessionConfiguration = URLSessionConfiguration.default
+        
+        // Set the Configuration on your session object
+        session = URLSession(configuration: sessionConfiguration)
+        apiUrlData = apiData
+    }
 
 
 }
