@@ -75,8 +75,9 @@ class SessionManager {
             
             responseClosure(data as NSData?, nil);
         }
-
         
+        // Resume Task
+        task.resume()
     }
     
 }
