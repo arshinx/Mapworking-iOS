@@ -43,5 +43,5 @@ class Alerts: NSObject {
 
 // Mark: Identifiers
 class Identifiers: NSObject {
-    
+    static let loginSegue = "Login"
 }
