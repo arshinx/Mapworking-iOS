@@ -8,17 +8,20 @@
 
 import Foundation
 
+// MARK: Struct
+struct URLData {
+    let scheme: String
+    let host: String
+    let Path: String
+}
+
 class SessionManager {
     
     // MARK: Variables
     private let session: URLSession!
-    private let apiUrlData: APIUrlData
+    private let apiUrlData: UrlData
     
-    struct URLData {
-        let scheme: String
-        let host: String
-        let Path: String
-    }
+    
 
 
 }
