@@ -15,7 +15,7 @@ class SessionManager {
     private let apiUrlData: APIUrlData
     
     struct URLData {
-        
+        let scheme: String
     }
 
 
