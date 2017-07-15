@@ -80,5 +80,10 @@ class Contants: NSObject {
             static let contentType = "Content-Type"
             static let XSRF_Token = "X-XSRF-TOKEN"
         }
+        
+        // API Header Values
+        struct APIHeaderValues {
+            static let application_json = "application/json"
+        }
     }
 }
