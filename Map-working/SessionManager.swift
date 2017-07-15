@@ -57,6 +57,11 @@ extension SessionManager {
             }
         }
         
+        // Add body if present
+        if let requestBody = requestBody {
+            request.httpBody = try! JSONSerialization.data(withJSONObject: requestBody, options: JSONSerialization.WritingOptions())
+        }
+        
     }
     
 }
