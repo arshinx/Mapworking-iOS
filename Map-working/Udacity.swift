@@ -39,12 +39,12 @@ class Udacity: NSObject {
             
             //Errror status outside rangge of 201 and 299
             guard let statusCode = (res as? HTTPURLResponse)?.statusCode, statusCode >= 200 && statusCode <= 299 else {
-                handleError(error: "Your request returned a status code other than 2xx!", errorMessage: Errors.InvalidError)
+                handleError(error: "Your request returned a status code other than 2xx!", errorMessage: Contants.Errors.cannotOpenURL)
                 return
             }
             
             guard let data = data else {
-                handleError(error: "No Data Was Returned By The Request!", errorMessage: Errors.CantLogin)
+                handleError(error: "No Data Was Returned By The Request!", errorMessage: Contants.Errors.emptyurl)
                 return
             }
             
