@@ -25,6 +25,11 @@ class Errors: NSObject {
     
 }
 
+// Mark: Notifications
+class Notifications: NSObject {
+    static let studentLocationsPinnedDown = "Student Locations Pinned Down"
+}
+
 // Mark: Alerts
 class Alerts: NSObject {
     
