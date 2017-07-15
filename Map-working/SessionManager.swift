@@ -36,12 +36,9 @@ class SessionManager {
         apiUrlData = apiData
     }
 
-}
-
-// MARK: Request Methods
-extension SessionManager {
+    // MARK: Request Methods
     
-    //MARK: Data Task Request
+    // Data Task Request
     func initiateRequest(Url: URL, requestMethod: HTTPMethod, requestHeaders: [String:String]? = nil,
                          requestBody: [String:AnyObject]? = nil,
                          responseClosure: @escaping (NSData?, String?) -> Void){
@@ -61,6 +58,24 @@ extension SessionManager {
         if let requestBody = requestBody {
             request.httpBody = try! JSONSerialization.data(withJSONObject: requestBody, options: JSONSerialization.WritingOptions())
         }
+        
+        // Create Task
+        let task = session.dataTask(with: request) {(data, response, error) in
+            
+            // Check for errors
+            if let error = error {
+                responseClosure(nil, error.localizedDescription)
+                return
+            }
+            
+            // Check for successful response via status codes
+            if let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode < 200 && statusCode > 299 {
+                responseClosure(nil, "Unsuccessful Status Code: \(statusCode)")
+            }
+            
+            responseClosure(data as NSData?, nil);
+        }
+
         
     }
     
