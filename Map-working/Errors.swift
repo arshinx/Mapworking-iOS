@@ -40,3 +40,8 @@ class Alerts: NSObject {
     static let overWriteAlert = "Overwrite Location?"
     
 }
+
+// Mark: Identifiers
+class Identifiers: NSObject {
+    
+}
