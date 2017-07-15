@@ -36,6 +36,7 @@ class SessionManager {
         apiUrlData = apiData
     }
 
+    // ---- ----------- ----
     // MARK: Request Methods
     
     // Data Task Request
@@ -78,6 +79,11 @@ class SessionManager {
         
         // Resume Task
         task.resume()
+    }
+    
+    // Build URL for request
+    func urlForRequest(apiMethod: String?, pathExtension: String? = nil, parameters: [String : AnyObject]? = nil) -> URL {
+        
     }
     
 }
