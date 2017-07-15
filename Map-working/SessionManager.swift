@@ -32,5 +32,9 @@ class SessionManager {
         apiUrlData = apiData
     }
 
+}
 
+// MARK: Request Methods
+extension SessionManager {
+    
 }
