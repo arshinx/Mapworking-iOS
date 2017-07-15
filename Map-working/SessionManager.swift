@@ -50,6 +50,13 @@ extension SessionManager {
         var request = URLRequest(url: Url)
         request.httpMethod = requestMethod.rawValue
         
+        // Add headers if present
+        if let requestHeaders = requestHeaders {
+            for (key, value) in requestHeaders {
+                request.addValue(value, forHTTPHeaderField: key)
+            }
+        }
+        
     }
     
 }
