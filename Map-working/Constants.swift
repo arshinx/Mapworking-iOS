@@ -126,5 +126,11 @@ class Contants: NSObject {
     // MARK: Parse
     class Parse {
         
+        // API Components Constants
+        struct APIComponents {
+            static let scheme = "https"
+            static let host = "parse.udacity.com"
+            static let path = "/parse/classes"
+        }
     }
 }
