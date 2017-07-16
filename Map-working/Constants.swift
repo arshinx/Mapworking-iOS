@@ -122,4 +122,9 @@ class Contants: NSObject {
         static let signUpURL = "https://www.udacity.com/account/auth#!/signup"
 
     }
+    
+    // MARK: Parse
+    class Parse {
+        
+    }
 }
