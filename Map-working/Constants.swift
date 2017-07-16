@@ -132,5 +132,10 @@ class Contants: NSObject {
             static let host = "parse.udacity.com"
             static let path = "/parse/classes"
         }
+        
+        // APIMethods
+        struct APIMethod {
+            static let studentLocation = "/StudentLocation"
+        }
     }
 }
