@@ -59,7 +59,7 @@ class Contants: NSObject {
     }
     
     // MARK: Udacity
-    class UdacityConstants: NSObject {
+    class Udacity: NSObject {
         
         // API Components Constants
         struct APIComponents {
