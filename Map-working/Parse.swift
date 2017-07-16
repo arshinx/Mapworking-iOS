@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Parse: NSObject {
+class Parse {
     
 }
