@@ -35,7 +35,8 @@ extension Udacity {
     func request(url: URL, method: HTTPMethod, headers: [String : String]? = nil, body: [String : AnyObject]? = nil,
                  responseClosure : @escaping (_ jsonAsDictionary: [String:AnyObject]?, _ error: String?) -> Void) {
         
-        
+        // Required Header(s)
+        var requiredHeaders = [Contants.Udacity.APIHeaderKeys.accept: Contants.Udacity.APIHeaderValues.application_json, Contants.Udacity.APIHeaderKeys.contentType: Contants.Udacity.APIHeaderValues.application_json]
         
     }
 }
