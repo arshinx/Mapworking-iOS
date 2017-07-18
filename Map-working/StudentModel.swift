@@ -20,4 +20,12 @@ struct StudentModel {
     }
     
     var mediaUrl: String
+    
+    // Initializer
+    init(uniqueKey: String, firstName: String, lastName: String, mediaUrl: String) {
+        self.uniqueKey = uniqueKey
+        self.firstName = firstName
+        self.lastName  = lastName
+        self.mediaUrl  = mediaUrl
+    }
 }
