@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Udacity: NSObject {
+class Udacity {
     
     
     
