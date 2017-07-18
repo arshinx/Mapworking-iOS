@@ -183,5 +183,16 @@ class Contants: NSObject {
             static let mapString = "mapString"
         }
         
+        // Student Location Keys
+        struct StudentLocationKeys {
+            static let uniqueKey = "uniqueKey"
+            static let firstName = "firstName"
+            static let lastName = "lastName"
+            static let mediaURL = "mediaURL"
+            static let latitude = "latitude"
+            static let longitude = "longitude"
+            static let mapString = "mapString"
+        }
+        
     }
 }
