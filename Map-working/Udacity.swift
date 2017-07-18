@@ -13,5 +13,8 @@ class Udacity {
     // Variables
     let sessionObject: SessionManager
     
+    // MARK: Singleton
+    private static var sharedManager = Udacity()
+    
     
 }
