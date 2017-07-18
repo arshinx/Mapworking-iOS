@@ -13,5 +13,9 @@ struct StudentModel {
     // Name
     let uniqueKey: String
     let firstName: String
-    let lastname:  String
+    let lastName:  String
+    
+    var fullName: String {
+        return (firstName + " " + lastName)
+    }
 }
