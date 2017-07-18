@@ -32,6 +32,7 @@ class Udacity {
 // Mark: Core Methods
 extension Udacity {
     
+    // -----
     // Login
     func login(username: String, password: String, facebookToken: String? = nil,
                responseClosure: @escaping (_ userKey: String?, _ error: String?) -> Void) {
@@ -70,6 +71,14 @@ extension Udacity {
             
             responseClosure(nil, Constants.Udacity.Errors.loginError)
         }
+    }
+    
+    // -----
+    // Get Student Data
+    
+    func getStudentData(fromKey: String, responseClosure: @escaping (_ student: StudentModel?, _ error: String?) -> Void) {
+        
+        
     }
 }
 
