@@ -21,5 +21,12 @@ class Udacity {
         return sharedManager
     }
     
+    // Init Method
+    init() {
+        
+        let apiUrlData = URLData(scheme: Contants.Udacity.APIComponents.scheme, host: Contants.Udacity.APIComponents.host, Path: Contants.Udacity.APIComponents.path)
+        sessionObject = SessionManager(apiData: apiUrlData)
+    }
+    
     
 }
