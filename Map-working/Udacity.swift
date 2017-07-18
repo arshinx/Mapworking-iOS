@@ -32,4 +32,17 @@ class Udacity {
 // Mark: Helpers
 extension Udacity {
     
+    func request(url: URL, method: HTTPMethod, headers: [String : String]? = nil, body: [String : AnyObject]? = nil,
+                 responseClosure : @escaping (_ jsonAsDictionary: [String:AnyObject]?, _ error: String?) -> Void) {
+        
+        
+        
+    }
 }
+
+
+
+
+
+
+
