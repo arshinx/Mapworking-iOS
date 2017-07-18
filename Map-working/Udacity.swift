@@ -44,7 +44,11 @@ extension Udacity {
         // Request
         request(url: loginURL, method: .POST, body: loginBody as [String : AnyObject]?) {(jsonResponseDictionary, error) in
             
-            
+            // Errors?
+            guard error == nil else {
+                responseClosure(nil, error)
+                return
+            }
         }
     }
 }
