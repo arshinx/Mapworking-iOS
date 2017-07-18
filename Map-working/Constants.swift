@@ -167,5 +167,21 @@ class Contants: NSObject {
             static let recentlyUpdated = "-updatedAt"
             static let recentlyCreated = "-createdAt"
         }
+        
+        // JSONResponseKeys
+        struct JSONResponseKeys {
+            static let error = "error"
+            static let results = "results"
+            static let objectID = "objectId"
+            static let updatedAt = "updatedAt"
+            static let uniqueKey = "uniqueKey"
+            static let firstName = "firstName"
+            static let lastName = "lastName"
+            static let mediaURL = "mediaURL"
+            static let latitude = "latitude"
+            static let longitude = "longitude"
+            static let mapString = "mapString"
+        }
+        
     }
 }
