@@ -152,5 +152,13 @@ class Contants: NSObject {
             static let APIKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
             static let application_json = "application/json"
         }
+        
+        // Parameter Keys
+        struct ParameterKeys {
+            static let limit = "limit"
+            static let order = "order"
+            static let Where = "where"
+            static let uniqueKey = "uniqueKey"
+        }
     }
 }
