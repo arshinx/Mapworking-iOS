@@ -10,4 +10,8 @@ import Foundation
 
 struct StudentModel {
     
+    // Name
+    let uniqueKey: String
+    let firstName: String
+    let lastname:  String
 }
