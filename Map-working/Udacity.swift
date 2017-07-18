@@ -16,5 +16,10 @@ class Udacity {
     // MARK: Singleton
     private static var sharedManager = Udacity()
     
+    class func sharedInstance() -> Udacity {
+        
+        return sharedManager
+    }
+    
     
 }
