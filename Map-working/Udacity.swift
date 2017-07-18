@@ -38,6 +38,15 @@ extension Udacity {
         // Required Header(s)
         var requiredHeaders = [Contants.Udacity.APIHeaderKeys.accept: Contants.Udacity.APIHeaderValues.application_json, Contants.Udacity.APIHeaderKeys.contentType: Contants.Udacity.APIHeaderValues.application_json]
         
+        // Additional Header(s)
+        if let headers = headers {
+            for (key, value) in headers {
+                requiredHeaders[key] = value
+            }
+        }
+        
+        
+        
     }
 }
 
