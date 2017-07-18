@@ -137,5 +137,13 @@ class Contants: NSObject {
         struct APIMethod {
             static let studentLocation = "/StudentLocation"
         }
+        
+        // HeaderKeys
+        struct RequestHeaderKeys {
+            static let appId = "X-Parse-Application-Id"
+            static let APIKey = "X-Parse-REST-API-Key"
+            static let accept = "Accept"
+            static let content_type = "Content-Type"
+        }
     }
 }
