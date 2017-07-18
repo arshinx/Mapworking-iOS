@@ -24,7 +24,7 @@ class Udacity {
     // Init Method
     init() {
         
-        let apiUrlData = URLData(scheme: Contants.Udacity.APIComponents.scheme, host: Contants.Udacity.APIComponents.host, Path: Contants.Udacity.APIComponents.path)
+        let apiUrlData = URLData(scheme: Constants.Udacity.APIComponents.scheme, host: Constants.Udacity.APIComponents.host, Path: Constants.Udacity.APIComponents.path)
         sessionManager = SessionManager(apiData: apiUrlData)
     }
 }
@@ -37,9 +37,9 @@ extension Udacity {
                responseClosure: @escaping (_ userKey: String?, _ error: String?) -> Void) {
         
         // Setup
-        let loginURL = sessionManager.urlForRequest(apiMethod: Contants.Udacity.APIMethods.session)
+        let loginURL = sessionManager.urlForRequest(apiMethod: Constants.Udacity.APIMethods.session)
         var loginBody = [String : Any]()
-        loginBody[Contants.Udacity.HTTPBodyKeys.udacity] = [Contants.Udacity.HTTPBodyKeys.username: username, Contants.Udacity.HTTPBodyKeys.password: password]
+        loginBody[Constants.Udacity.HTTPBodyKeys.udacity] = [Constants.Udacity.HTTPBodyKeys.username: username, Constants.Udacity.HTTPBodyKeys.password: password]
         
         // Request
         request(url: loginURL, method: .POST, body: loginBody as [String : AnyObject]?) {(jsonResponseDictionary, error) in
@@ -52,8 +52,8 @@ extension Udacity {
             
             // Recognized Error?
             if let jsonResponseDictionary = jsonResponseDictionary,
-                let _ = jsonResponseDictionary[Contants.Udacity.JSONResponseKeys.status] as? Int,
-                let error = jsonResponseDictionary[Contants.Udacity.JSONResponseKeys.error] as? String {
+                let _ = jsonResponseDictionary[Constants.Udacity.JSONResponseKeys.status] as? Int,
+                let error = jsonResponseDictionary[Constants.Udacity.JSONResponseKeys.error] as? String {
                 
                 responseClosure(nil, error)
                 return
@@ -61,14 +61,14 @@ extension Udacity {
             
             // JSON Dictionary Contents
             if let jsonResponseDictionary = jsonResponseDictionary,
-                let account = jsonResponseDictionary[Contants.Udacity.JSONResponseKeys.account] as? [String : AnyObject],
-                let key = account[Contants.Udacity.JSONResponseKeys.key] as? String {
+                let account = jsonResponseDictionary[Constants.Udacity.JSONResponseKeys.account] as? [String : AnyObject],
+                let key = account[Constants.Udacity.JSONResponseKeys.key] as? String {
                 
                 responseClosure(key, nil)
                 return
             }
             
-            responseClosure(nil, Contants.Udacity.Errors.loginError)
+            responseClosure(nil, Constants.Udacity.Errors.loginError)
         }
     }
 }
@@ -80,7 +80,7 @@ extension Udacity {
                  responseClosure : @escaping (_ jsonAsDictionary: [String:AnyObject]?, _ error: String?) -> Void) {
         
         // Required Header(s)
-        var requiredHeaders = [Contants.Udacity.APIHeaderKeys.accept: Contants.Udacity.APIHeaderValues.application_json, Contants.Udacity.APIHeaderKeys.contentType: Contants.Udacity.APIHeaderValues.application_json]
+        var requiredHeaders = [Constants.Udacity.APIHeaderKeys.accept: Constants.Udacity.APIHeaderValues.application_json, Constants.Udacity.APIHeaderKeys.contentType: Constants.Udacity.APIHeaderValues.application_json]
         
         // Additional Header(s)
         if let headers = headers {
