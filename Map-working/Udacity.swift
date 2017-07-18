@@ -11,7 +11,7 @@ import UIKit
 class Udacity {
     
     // Variables
-    let sessionObject: SessionManager
+    let sessionManager: SessionManager
     
     // MARK: Singleton
     private static var sharedManager = Udacity()
@@ -25,7 +25,7 @@ class Udacity {
     init() {
         
         let apiUrlData = URLData(scheme: Contants.Udacity.APIComponents.scheme, host: Contants.Udacity.APIComponents.host, Path: Contants.Udacity.APIComponents.path)
-        sessionObject = SessionManager(apiData: apiUrlData)
+        sessionManager = SessionManager(apiData: apiUrlData)
     }
 }
 
@@ -45,7 +45,17 @@ extension Udacity {
             }
         }
         
-        
+        // Session Manager - Request
+        sessionManager.initiateRequest(Url: url, requestMethod: method, requestHeaders: requiredHeaders, requestBody: body) { (data, error) in
+            
+            // Data Exists?
+            if let data = data {
+                let jsonResponseDictionary = try! JSONSerialization.jsonObject(with: data.subdata(with: NSMakeRange(5, data.length - 5)), options: .allowFragments) as! [String : AnyObject]
+                responseClosure(jsonResponseDictionary, nil)
+            } else {
+                responseClosure(nil, error)
+            }
+        }
         
     }
 }
