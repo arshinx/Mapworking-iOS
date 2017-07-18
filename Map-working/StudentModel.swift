@@ -18,4 +18,6 @@ struct StudentModel {
     var fullName: String {
         return (firstName + " " + lastName)
     }
+    
+    var mediaUrl: String
 }
