@@ -10,7 +10,8 @@ import UIKit
 
 class Udacity {
     
-    
+    // Variables
+    let sessionObject: SessionManager
     
     
 }
