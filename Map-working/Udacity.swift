@@ -49,6 +49,15 @@ extension Udacity {
                 responseClosure(nil, error)
                 return
             }
+            
+            // Recognized Error?
+            if let jsonResponseDictionary = jsonResponseDictionary,
+                let _ = jsonResponseDictionary[Contants.Udacity.JSONResponseKeys.status] as? Int,
+                let error = jsonResponseDictionary[Contants.Udacity.JSONResponseKeys.error] as? String {
+                
+                responseClosure(nil, error)
+                return
+            }
         }
     }
 }
