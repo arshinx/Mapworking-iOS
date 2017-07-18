@@ -160,5 +160,12 @@ class Contants: NSObject {
             static let Where = "where"
             static let uniqueKey = "uniqueKey"
         }
+        
+        // Parameter Values
+        struct ParameterValues {
+            static let hundred = 100
+            static let recentlyUpdated = "-updatedAt"
+            static let recentlyCreated = "-createdAt"
+        }
     }
 }
