@@ -67,6 +67,8 @@ extension Udacity {
                 responseClosure(key, nil)
                 return
             }
+            
+            responseClosure(nil, Contants.Udacity.Errors.loginError)
         }
     }
 }
