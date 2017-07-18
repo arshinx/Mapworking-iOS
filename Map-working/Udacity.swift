@@ -29,6 +29,17 @@ class Udacity {
     }
 }
 
+// Mark: Core Methods
+extension Udacity {
+    
+    // Login
+    func login(username: String, password: String, facebookToken: String? = nil,
+               responseClosure: @escaping (_ userKey: String?, _ error: String?) -> Void) {
+        
+        
+    }
+}
+
 // Mark: Helpers
 extension Udacity {
     
