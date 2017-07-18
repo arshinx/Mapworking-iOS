@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Contants: NSObject {
+class Contants {
 
     // Mark: Errors
     class Errors: NSObject {
