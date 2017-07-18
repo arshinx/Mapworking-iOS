@@ -36,7 +36,9 @@ extension Udacity {
     func login(username: String, password: String, facebookToken: String? = nil,
                responseClosure: @escaping (_ userKey: String?, _ error: String?) -> Void) {
         
-        
+        // Setup
+        let loginURL = sessionManager.urlForRequest(apiMethod: Contants.Udacity.APIMethods.session)
+        var loginBody = [String : Any]()
     }
 }
 
