@@ -58,6 +58,15 @@ extension Udacity {
                 responseClosure(nil, error)
                 return
             }
+            
+            // JSON Dictionary Contents
+            if let jsonResponseDictionary = jsonResponseDictionary,
+                let account = jsonResponseDictionary[Contants.Udacity.JSONResponseKeys.account] as? [String : AnyObject],
+                let key = account[Contants.Udacity.JSONResponseKeys.key] as? String {
+                
+                responseClosure(key, nil)
+                return
+            }
         }
     }
 }
