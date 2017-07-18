@@ -40,6 +40,12 @@ extension Udacity {
         let loginURL = sessionManager.urlForRequest(apiMethod: Contants.Udacity.APIMethods.session)
         var loginBody = [String : Any]()
         loginBody[Contants.Udacity.HTTPBodyKeys.udacity] = [Contants.Udacity.HTTPBodyKeys.username: username, Contants.Udacity.HTTPBodyKeys.password: password]
+        
+        // Request
+        request(url: loginURL, method: .POST, body: loginBody as [String : AnyObject]?) {(jsonResponseDictionary, error) in
+            
+            
+        }
     }
 }
 
