@@ -145,5 +145,12 @@ class Contants: NSObject {
             static let accept = "Accept"
             static let content_type = "Content-Type"
         }
+        
+        // HeaderValues
+        struct RequestHeaderValues {
+            static let appId = "QrX47CA9cyuGewLdsL7o5Eb8iug6Em8ye0dnAbIr"
+            static let APIKey = "QuWThTdiRmTux3YaDseUSEpUKo7aBYM737yKd4gY"
+            static let application_json = "application/json"
+        }
     }
 }
