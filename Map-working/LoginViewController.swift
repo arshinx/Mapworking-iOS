@@ -43,6 +43,11 @@ class LoginViewController: UIViewController {
                             
                             
                         })
+                    } else {
+                        
+                        // Invalid Key
+                        self.createAlert(alertTitle: Constants.Alerts.LoginAlertTitle, message: error!,
+                                         actionStyle: .cancel, actionTitle: "Dismiss")
                     }
                 }
             })
