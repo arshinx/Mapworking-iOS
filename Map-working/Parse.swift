@@ -18,4 +18,11 @@ class Parse {
         return sharedManager
     }
     
+    // Initializer
+    
+    init() {
+        let apiUrlData = URLData(scheme: Constants.Parse.APIComponents.scheme, host: Constants.Parse.APIComponents.host, Path: Constants.Parse.APIComponents.path)
+        sessionManager = SessionManager(apiData: apiUrlData)
+    }
+    
 }
