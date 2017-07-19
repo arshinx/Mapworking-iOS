@@ -195,4 +195,21 @@ class Constants {
         }
         
     }
+    
+    func createAlert(alertTitle: String, message: String, actionStyle: UIAlertActionStyle, actionTitle: String, viewController: UIViewController) {
+        
+        // Create AlertController
+        let alert: UIAlertController = UIAlertController(title: alertTitle,
+                                                         message: message,
+                                                         preferredStyle: .alert)
+        
+        // Create Action
+        let action: UIAlertAction = UIAlertAction(title: actionTitle, style: actionStyle)
+        
+        // Add Action
+        alert.addAction(action)
+        
+        // Present Alert
+        viewController.present(alert, animated: true)
+    }
 }
