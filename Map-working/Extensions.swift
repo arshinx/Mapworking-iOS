@@ -11,12 +11,12 @@ import UIKit
 
 extension UIAlertController {
     
-    func createAlert(title: String, message: String) {
+    func createAlert(title: String, message: String, style: UIAlertControllerStyle) {
         
         // Create AlertController
         let alert: UIAlertController = UIAlertController(title: title,
                                                          message: message,
-                                                         preferredStyle: .alert)
+                                                         preferredStyle: style)
         
         // Create Action
         let action: UIAlertAction = UIAlertAction(title: "OK", style: .default)
