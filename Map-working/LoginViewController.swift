@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     // MARK: Properties
+    let udacity = Udacity.sharedInstance()
     
     // Outlets
     @IBOutlet weak var emailField: UITextField!
