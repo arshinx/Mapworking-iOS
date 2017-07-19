@@ -125,8 +125,10 @@ extension Udacity {
         
         // Headers
         if let xsrfCookie = xsrfCookie {
-            logoutHeaders[APIHeaderKeys.XSRF_Token] = xsrfCookie.value as AnyObject?
+            logoutHeaders[Constants.Udacity.APIHeaderKeys.XSRF_Token] = xsrfCookie.value as AnyObject?
         }
+        
+        
 
     }
 }
