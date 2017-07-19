@@ -90,6 +90,17 @@ extension Udacity {
                 return
             }
             
+            if let jsonResDict = jsonResDict,
+                let userInformation = jsonResDict[Constants.Udacity.JSONResponseKeys.user] as? [String : AnyObject],
+                let firstName = userInformation[Constants.Udacity.JSONResponseKeys.firstName] as? String,
+                let lastName = userInformation[Constants.Udacity.JSONResponseKeys.lastName] as? String {
+                
+                responseClosure(StudentModel(uniqueKey: key, firstName: firstName, lastName: lastName, mediaUrl: ""), nil)
+                return
+            }
+            
+            responseClosure(nil, Constants.Udacity.Errors.noUserData)
+            
         }
     }
 }
