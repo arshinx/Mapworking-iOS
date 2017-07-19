@@ -30,4 +30,11 @@ class Parse {
 // Helper
 extension Parse {
     
+    // Request to Parse
+    func request(url: URL, method: HTTPMethod, body: [String : AnyObject]? = nil,
+                 responseClosure : @escaping (_ jsonAsDictionary: [String:AnyObject]?, _ error: String?) -> Void) {
+        
+        
+    }
+    
 }
