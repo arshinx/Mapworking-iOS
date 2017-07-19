@@ -76,9 +76,10 @@ extension Udacity {
     // -----
     // Get Student Data
     
-    func getStudentData(fromKey: String, responseClosure: @escaping (_ student: StudentModel?, _ error: String?) -> Void) {
+    func getStudentData(key: String, responseClosure: @escaping (_ student: StudentModel?, _ error: String?) -> Void) {
         
-        
+        // Student URL
+        let studentURL = sessionManager.urlForRequest(apiMethod: Constants.Udacity.APIMethods.users, pathExtension: "/\(key)")
     }
 }
 
