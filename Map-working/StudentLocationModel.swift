@@ -31,6 +31,7 @@ struct StudentLocationModel {
         // Location Model
         let latitude = dictionary[Constants.Parse.JSONResponseKeys.latitude] as? Double ?? 0.0
         let longitude = dictionary[Constants.Parse.JSONResponseKeys.longitude] as? Double ?? 0.0
-        let location = dictionary[Constants.Parse.JSONResponseKeys.location] as? String ?? ""
+        let mapString = dictionary[Constants.Parse.JSONResponseKeys.location] as? String ?? ""
+        location = LocationModel(latitude: latitude, longitude: longitude, location: mapString)
     }
 }
