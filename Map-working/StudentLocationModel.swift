@@ -10,5 +10,8 @@ import Foundation
 
 struct StudentLocationModel {
     
-    
+    // MARK: Properties
+    let student:  StudentModel
+    let location: LocationModel
+    let objectID: String
 }
