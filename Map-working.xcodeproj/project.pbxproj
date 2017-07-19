@@ -11,6 +11,7 @@
 		73027B081F1ED686002F7C32 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73027B071F1ED686002F7C32 /* StudentModel.swift */; };
 		73027B0A1F1ED808002F7C32 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73027B091F1ED808002F7C32 /* LocationModel.swift */; };
 		73027B0C1F1EDFC4002F7C32 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73027B0B1F1EDFC4002F7C32 /* DataSource.swift */; };
+		73027B0E1F1EE361002F7C32 /* StudentLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73027B0D1F1EE361002F7C32 /* StudentLocationModel.swift */; };
 		731569371F1AB90C0028C20D /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731569361F1AB90C0028C20D /* SessionManager.swift */; };
 		735F14231F0C91AE0094C2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F14221F0C91AE0094C2A1 /* AppDelegate.swift */; };
 		735F142A1F0C91AE0094C2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735F14281F0C91AE0094C2A1 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		73027B071F1ED686002F7C32 /* StudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		73027B091F1ED808002F7C32 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		73027B0B1F1EDFC4002F7C32 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		73027B0D1F1EE361002F7C32 /* StudentLocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocationModel.swift; sourceTree = "<group>"; };
 		731569361F1AB90C0028C20D /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		735F141F1F0C91AE0094C2A1 /* Map-working.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map-working.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		735F14221F0C91AE0094C2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				73027B0B1F1EDFC4002F7C32 /* DataSource.swift */,
 				73027B071F1ED686002F7C32 /* StudentModel.swift */,
 				73027B091F1ED808002F7C32 /* LocationModel.swift */,
+				73027B0D1F1EE361002F7C32 /* StudentLocationModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				73027B0A1F1ED808002F7C32 /* LocationModel.swift in Sources */,
 				73027B0C1F1EDFC4002F7C32 /* DataSource.swift in Sources */,
 				73BFBF461F0E211E00295179 /* AddPinViewController.swift in Sources */,
+				73027B0E1F1EE361002F7C32 /* StudentLocationModel.swift in Sources */,
 				7380FEA31F117655000DB598 /* Udacity.swift in Sources */,
 				731569371F1AB90C0028C20D /* SessionManager.swift in Sources */,
 				73027B061F1BE2CF002F7C32 /* Parse.swift in Sources */,
