@@ -103,6 +103,13 @@ extension Udacity {
             
         }
     }
+    
+    // ----
+    // Logout
+    func logout(responseClosure: @escaping (_ success: Bool, _ error: String?) -> Void) {
+        
+        
+    }
 }
 
 // Mark: Helpers
