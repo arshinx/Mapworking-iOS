@@ -52,6 +52,14 @@ struct StudentLocationModel {
 // Helpers
 extension StudentLocationModel {
     
+    // Get Locations From Dictionaries
+    static func getLocationsFromDictionaries(dictionaries: [[String:AnyObject]]) -> [StudentLocationModel] {
+        var studentLocations = [StudentLocationModel]()
+        for studentDictionary in dictionaries {
+            studentLocations.append(StudentLocationModel(dictionary: studentDictionary))
+        }
+        return studentLocations
+    }
 }
 
 
