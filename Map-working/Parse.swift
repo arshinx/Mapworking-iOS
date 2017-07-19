@@ -69,6 +69,10 @@ extension Parse {
         // Create URL
         let locationURL = sessionManager.urlForRequest(apiMethod: Constants.Parse.APIMethod.studentLocation, parameters: [Constants.Parse.ParameterKeys.Where: "{\"\(Constants.Parse.ParameterKeys.uniqueKey)\":\"" + "\(uniqueKey)" + "\"}" as AnyObject])
         
+        // Request
+        request(url: locationURL, method: .GET) { (jsonResDict, error) in
+            
+        }
     }
     
 }
