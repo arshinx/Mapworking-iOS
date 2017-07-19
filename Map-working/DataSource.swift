@@ -31,7 +31,19 @@ class DataSource: NSObject {
             
             // Error?
             if let _ = error {
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: AppConstants.notifications.studentLocationsPinnedDownError), object: nil)
+                
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: Constants.Notifications.studentLocationsPinnedDownError), object: nil)
+                
+            } else {
+                
+                guard let studentLocationDict = studentLocationDict else {
+                    
+                    return
+                }
+                
+                self.studentLocations = studentLocationDict
+                
+
             }
         }
     }
