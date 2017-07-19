@@ -20,5 +20,12 @@ struct StudentLocationModel {
         
         // Object ID
         objectID = dictionary[Constants.Parse.JSONResponseKeys.objectID] as? String ?? ""
+        
+        // Student Model
+        let firstName = dictionary[Constants.Parse.JSONResponseKeys.firstName] as? String ?? ""
+        let lastName = dictionary[Constants.Parse.JSONResponseKeys.lastName] as? String ?? ""
+        let uniqueKey = dictionary[Constants.Parse.JSONResponseKeys.uniqueKey] as? String ?? ""
+        let mediaUrl = dictionary[Constants.Parse.JSONResponseKeys.mediaURL] as? String ?? ""
+        student = StudentModel(uniqueKey: uniqueKey, firstName: firstName, lastName: lastName, mediaUrl: mediaUrl)
     }
 }
