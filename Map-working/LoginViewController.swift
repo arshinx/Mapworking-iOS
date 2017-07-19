@@ -22,11 +22,17 @@ class LoginViewController: UIViewController {
     @IBAction func Login(_ sender: Any) {
         
         if emailField.text!.isEmpty {
+            
             self.createAlert(alertTitle: "Empty Field", message: Constants.Errors.usernameEmpty, actionStyle: .default, actionTitle: "Okay")
         } else if passwordField.text!.isEmpty {
+            
             self.createAlert(alertTitle: "Empty Field", message: Constants.Errors.passwordEmpty, actionStyle: .default, actionTitle: "Okay")
         } else {
             
+            // Login
+            udacity.login(username: emailField.text!, password: passwordField.text!, responseClosure: { (key, error) in
+                
+            })
         }
     }
     
