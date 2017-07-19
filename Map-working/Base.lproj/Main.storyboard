@@ -126,6 +126,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Login:" destination="Z2v-Be-LJC" eventType="touchUpInside" id="oz1-wC-Kt8"/>
                                     <segue destination="49e-Tb-3d3" kind="show" identifier="Login" id="det-QK-JTZ"/>
                                 </connections>
                             </button>
@@ -150,6 +151,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="x2f-V6-4Iu" id="gnk-XI-jy1"/>
+                        <outlet property="passwordField" destination="OnE-Q1-4sq" id="blo-LC-jkG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I27-BI-v12" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
