@@ -144,7 +144,7 @@ extension Udacity {
                 return
             }
 
-            
+            responseClosure(false, Errors.logoutError)
         }
 
     }
