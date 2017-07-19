@@ -11,10 +11,16 @@ import UIKit
 class DataSource: NSObject {
     
     // MARK: Properties
-    private let parse = Parse
+    
+    // Variables
+    private let parse = Parse()
     var studentLocations = [StudentLocationModel]()
     var studentUser: StudentModel? = nil
     private static let sharedInstance = DataSource()
 
+    // Singleton
+    class func sharedDataSource() -> DataSource  {
+        return sharedInstance
+    }
 
 }
