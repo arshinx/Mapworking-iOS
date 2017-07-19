@@ -119,7 +119,7 @@ class Constants {
         }
 
         // Signup URL
-        static let signUpURL = "https://www.udacity.com/account/auth#!/signup"
+        static let signupURL = "https://www.udacity.com/account/auth#!/signup"
 
     }
     
