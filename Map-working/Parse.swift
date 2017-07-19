@@ -27,6 +27,12 @@ class Parse {
     
 }
 
+// Core Methods
+extension Parse {
+    
+    
+}
+
 // Helper
 extension Parse {
     
