@@ -49,6 +49,16 @@ extension Parse {
                 return
             }
             
+            // Parse JSON
+            if let jsonResDict = jsonResDict,
+                let studentLocationDics = jsonResDict[Constants.Parse.JSONResponseKeys.results] as? [[String : AnyObject]] {
+                
+                responseClosure(StudentLocationModel.getLocationsFromDictionaries(dictionaries: studentLocationDics), nil)
+                
+                return
+            }
+
+            
         }
     }
     
