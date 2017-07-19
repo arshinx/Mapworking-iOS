@@ -17,4 +17,6 @@ struct LocationModel {
     var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2DMake(latitude, longitude)
     }
+    
+    let location: String
 }
