@@ -47,5 +47,9 @@ class LoginViewController: UIViewController {
 // Keyboard Dismiss - LoginViewController TextField Delegate
 extension LoginViewController: UITextFieldDelegate {
     
-    
+    // Dismiss Keyboard with return key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
