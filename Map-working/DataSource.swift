@@ -26,7 +26,10 @@ class DataSource: NSObject {
     // Pin Down Student Locations - Notifications / Broadcast
     func pinDownStudentLocations() {
         
-        
+        // Get last 100 locations
+        parse.recentHundredLocations() { (studentLocationDict, error) in
+            
+        }
     }
 
 }
