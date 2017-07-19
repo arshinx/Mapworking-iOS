@@ -10,4 +10,6 @@ import Foundation
 
 class Parse {
     
+    // Properties
+    let sessionManager: SessionManager
 }
