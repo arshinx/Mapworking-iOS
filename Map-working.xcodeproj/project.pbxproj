@@ -82,12 +82,12 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		731569351F1AB8940028C20D /* Networking */ = {
+		731569351F1AB8940028C20D /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				731569361F1AB90C0028C20D /* SessionManager.swift */,
 			);
-			name = Networking;
+			name = Helper;
 			sourceTree = "<group>";
 		};
 		735F14161F0C91AE0094C2A1 = {
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				735F14221F0C91AE0094C2A1 /* AppDelegate.swift */,
-				731569351F1AB8940028C20D /* Networking */,
+				731569351F1AB8940028C20D /* Helper */,
 				731569341F172DC50028C20D /* Models */,
 				731569331F172DA30028C20D /* View Controllers */,
 				735F14281F0C91AE0094C2A1 /* Main.storyboard */,
