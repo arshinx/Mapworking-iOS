@@ -94,6 +94,14 @@ extension Parse {
         }
     }
     
+    // --- ------------- ---
+    // Post Student Location
+    func postStudentLocation(studentData: StudentLocationModel, mediaUrl: String, responseClosure: @escaping (_ success: Bool, _ error: String?) -> Void) {
+        
+        
+        
+    }
+    
 }
 
 // Helper
