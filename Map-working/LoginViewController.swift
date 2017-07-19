@@ -37,7 +37,9 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
+        // TextField Delegate - enables touch to dismiss for Keyboard
+        self.emailField.delegate    = self
+        self.passwordField.delegate = self
     }
 
 }
