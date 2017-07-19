@@ -30,6 +30,13 @@ class Parse {
 // Core Methods
 extension Parse {
     
+    // ----
+    // Get last 100 student locations
+    func recentHundredLocations(responseClosure: @escaping (_ studentLocations: [StudentLocationModel]?,
+        _ error: String?) -> Void) {
+        
+        
+    }
     
 }
 
@@ -63,14 +70,6 @@ extension Parse {
             }
             
         }
-        
-    }
-    
-    // ----
-    // Get last 100 student locations
-    func recentHundredLocations(responseClosure: @escaping (_ studentLocations: [StudentLocationModel]?,
-        _ error: String?) -> Void) {
-        
         
     }
     
