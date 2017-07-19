@@ -22,5 +22,11 @@ class DataSource: NSObject {
     class func sharedDataSource() -> DataSource  {
         return sharedInstance
     }
+    
+    // Pin Down Student Locations - Notifications / Broadcast
+    func pinDownStudentLocations() {
+        
+        
+    }
 
 }
