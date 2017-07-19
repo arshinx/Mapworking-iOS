@@ -14,4 +14,11 @@ struct StudentLocationModel {
     let student:  StudentModel
     let location: LocationModel
     let objectID: String
+    
+    // Initializer
+    init(dictionary: [String : AnyObject]) {
+        
+        // Object ID
+        objectID = dictionary[Constants.Parse.JSONResponseKeys.objectID] as? String ?? ""
+    }
 }
