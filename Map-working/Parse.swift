@@ -26,3 +26,8 @@ class Parse {
     }
     
 }
+
+// Helper
+extension Parse {
+    
+}
