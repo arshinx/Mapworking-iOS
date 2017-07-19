@@ -35,6 +35,15 @@ class LoginViewController: UIViewController {
                 // Get Data Asynchronously
                 DispatchQueue.main.async {
                     
+                    // Key?
+                    if let key = key {
+                        
+                        // Get Student Data
+                        self.udacity.getStudentData(key: key, responseClosure: { (student, error) in
+                            
+                            
+                        })
+                    }
                 }
             })
         }
