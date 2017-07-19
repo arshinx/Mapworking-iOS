@@ -127,6 +127,15 @@ extension Parse {
                 return
             }
             
+            // Parse JSON
+            if let jsonResponseDict = jsonDict, let _ = jsonResponseDict[Constants.Parse.JSONResponseKeys.updatedAt] {
+                responseClosure(true, nil)
+                return
+            }
+            
+            // Response Closure
+            responseClosure(false, error)
+            
         }
         
     }
