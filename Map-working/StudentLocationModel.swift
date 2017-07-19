@@ -27,5 +27,9 @@ struct StudentLocationModel {
         let uniqueKey = dictionary[Constants.Parse.JSONResponseKeys.uniqueKey] as? String ?? ""
         let mediaUrl = dictionary[Constants.Parse.JSONResponseKeys.mediaURL] as? String ?? ""
         student = StudentModel(uniqueKey: uniqueKey, firstName: firstName, lastName: lastName, mediaUrl: mediaUrl)
+        
+        // Location Model
+        let latitude = dictionary[Constants.Parse.JSONResponseKeys.latitude] as? Double ?? 0.0
+        let longitude = dictionary[Constants.Parse.JSONResponseKeys.longitude] as? Double ?? 0.0
     }
 }
