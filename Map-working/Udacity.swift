@@ -80,6 +80,17 @@ extension Udacity {
         
         // Student URL
         let studentURL = sessionManager.urlForRequest(apiMethod: Constants.Udacity.APIMethods.users, pathExtension: "/\(key)")
+        
+        // Request
+        request(url: studentURL, method: .GET) { (jsonResDict, error) in
+            
+            // Errors?
+            guard error == nil else {
+                responseClosure(nil, error)
+                return
+            }
+            
+        }
     }
 }
 
