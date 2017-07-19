@@ -30,12 +30,14 @@ class Parse {
 // Core Methods
 extension Parse {
     
-    // ----
     // Get last 100 student locations
-    func recentHundredLocations(responseClosure: @escaping (_ studentLocations: [StudentLocationModel]?,
-        _ error: String?) -> Void) {
+    func recentHundredLocations(responseClosure: @escaping (_ studentLocations: [StudentLocationModel]?, _ error: String?) -> Void) {
         
-        
+        // Create URL
+        let url = sessionManager.urlForRequest(apiMethod: Constants.Parse.APIMethod.studentLocation, parameters: [
+            Constants.Parse.ParameterKeys.limit: Constants.Parse.ParameterValues.hundred as AnyObject,
+            Constants.Parse.ParameterKeys.order: Constants.Parse.ParameterValues.recentlyUpdated as AnyObject
+            ])
     }
     
 }
