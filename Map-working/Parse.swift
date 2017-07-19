@@ -140,6 +140,13 @@ extension Parse {
         
     }
     
+    // Update Student Location
+    func updateStudentLocationWith(objectID: String, mediaUrl: String, studentData: StudentLocationModel,
+                                   responseClosure: @escaping (_ success: Bool, _ error: String?) -> Void) {
+        
+        
+    }
+    
 }
 
 // Helper
