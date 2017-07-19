@@ -49,5 +49,10 @@ struct StudentLocationModel {
     }
 }
 
+// Helpers
+extension StudentLocationModel {
+    
+}
+
 
 
