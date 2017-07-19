@@ -18,7 +18,13 @@ class LoginViewController: UIViewController {
     
     // Actions
     @IBAction func Login(_ sender: Any) {
+        
     }
+    
+    @IBAction func Signup(_ sender: Any) {
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -136,6 +136,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.003010978457" green="0.70323187109999996" blue="0.89525973800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="Signup:" destination="Z2v-Be-LJC" eventType="touchUpInside" id="97z-vh-VQM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7s-Ra-TaI">
                                 <rect key="frame" x="16" y="626" width="197" height="21"/>
