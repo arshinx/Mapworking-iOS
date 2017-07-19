@@ -88,6 +88,9 @@ extension Parse {
                 }
                 
             }
+            
+            // Closure
+            responseClosure(nil, error)
         }
     }
     
