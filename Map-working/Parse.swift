@@ -42,6 +42,12 @@ extension Parse {
         // Request
         request(url: url, method: .GET) { (jsonResDict, error) in
             
+            // Errors?
+            guard error == nil else {
+                
+                responseClosure(nil, error)
+                return
+            }
             
         }
     }
