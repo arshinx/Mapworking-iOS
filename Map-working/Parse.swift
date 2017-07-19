@@ -66,7 +66,8 @@ extension Parse {
     func getStudentLocation(uniqueKey: String, responseClosure:
         @escaping (_ studentModel: StudentLocationModel?, _ error: String?) -> Void) {
         
-        
+        // Create URL
+        let locationURL = sessionManager.urlForRequest(apiMethod: Constants.Parse.APIMethod.studentLocation, parameters: [Constants.Parse.ParameterKeys.Where: "{\"\(Constants.Parse.ParameterKeys.uniqueKey)\":\"" + "\(uniqueKey)" + "\"}" as AnyObject])
         
     }
     
