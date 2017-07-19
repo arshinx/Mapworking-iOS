@@ -113,8 +113,19 @@ extension Parse {
         ]
         
         // Request
-        request(url: url, method: .POST, body: requestBody){ (jsonAsDictionary, error) in
+        request(url: url, method: .POST, body: requestBody){ (jsonDict, error) in
             
+            // Error?
+            guard error == nil else {
+                responseClosure(false, error)
+                return
+            }
+            
+            // Recognized Error
+            if let jsonResponseDict = jsonDict, let error = jsonResponseDict[Constants.Parse.JSONResponseKeys.error] {
+                responseClosure(false, error as? String)
+                return
+            }
             
         }
         
