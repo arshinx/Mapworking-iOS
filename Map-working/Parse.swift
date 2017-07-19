@@ -62,6 +62,14 @@ extension Parse {
         }
     }
     
+    // Get Student Location
+    func getStudentLocation(uniqueKey: String, responseClosure:
+        @escaping (_ studentModel: StudentLocationModel?, _ error: String?) -> Void) {
+        
+        
+        
+    }
+    
 }
 
 // Helper
