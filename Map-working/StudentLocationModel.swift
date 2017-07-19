@@ -34,4 +34,14 @@ struct StudentLocationModel {
         let mapString = dictionary[Constants.Parse.JSONResponseKeys.location] as? String ?? ""
         location = LocationModel(latitude: latitude, longitude: longitude, location: mapString)
     }
+    
+    // Initializer
+    init(student: StudentModel, location: LocationModel) {
+        objectID = ""
+        self.student  = student
+        self.location = location
+    }
 }
+
+
+
