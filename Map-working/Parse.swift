@@ -42,6 +42,12 @@ extension Parse {
             Constants.Parse.RequestHeaderKeys.content_type: Constants.Parse.RequestHeaderValues.application_json
         ]
         
+        // Request
+        sessionManager.initiateRequest(Url: url, requestMethod: method, requestHeaders: requestHeaders, requestBody: body) { (data, error) in
+            
+            
+        }
+        
     }
     
 }
