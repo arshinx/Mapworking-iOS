@@ -9,5 +9,12 @@
 import UIKit
 
 class DataSource: NSObject {
+    
+    // MARK: Properties
+    private let parse = Parse
+    var studentLocations = [StudentLocationModel]()
+    var studentUser: StudentModel? = nil
+    private static let sharedInstance = DataSource()
+
 
 }
