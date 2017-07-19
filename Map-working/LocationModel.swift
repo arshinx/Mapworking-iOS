@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import MapKit
 
 struct LocationModel {
     
     
 }
+
