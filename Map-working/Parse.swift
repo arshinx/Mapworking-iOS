@@ -48,6 +48,8 @@ extension Parse {
             // Data?
             if let data = data {
                 
+                let jsonResDict = try! JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as! [String : AnyObject]
+                responseClosure(jsonResDict, nil)
             } else {
                 
             }
