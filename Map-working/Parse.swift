@@ -34,6 +34,13 @@ extension Parse {
     func request(url: URL, method: HTTPMethod, body: [String : AnyObject]? = nil,
                  responseClosure : @escaping (_ jsonAsDictionary: [String:AnyObject]?, _ error: String?) -> Void) {
         
+        // Headers
+        let requestHeaders = [
+            Constants.Parse.RequestHeaderKeys.appId:        Constants.Parse.RequestHeaderValues.appId,
+            Constants.Parse.RequestHeaderKeys.APIKey:       Constants.Parse.RequestHeaderValues.APIKey,
+            Constants.Parse.RequestHeaderKeys.accept:       Constants.Parse.RequestHeaderValues.application_json,
+            Constants.Parse.RequestHeaderKeys.content_type: Constants.Parse.RequestHeaderValues.application_json
+        ]
         
     }
     
