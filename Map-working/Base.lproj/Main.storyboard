@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="2607" y="356"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="aCP-Ff-lm3">
             <objects>
-                <viewController id="Z2v-Be-LJC" sceneMemberID="viewController">
+                <viewController id="Z2v-Be-LJC" customClass="LoginViewController" customModule="Map_working" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TKF-5r-EY7"/>
                         <viewControllerLayoutGuide type="bottom" id="6ti-Fz-equ"/>
