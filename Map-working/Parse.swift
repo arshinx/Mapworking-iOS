@@ -58,7 +58,7 @@ extension Parse {
                 return
             }
 
-            
+            responseClosure(nil, error)
         }
     }
     
