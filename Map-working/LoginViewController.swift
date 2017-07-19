@@ -21,6 +21,13 @@ class LoginViewController: UIViewController {
     // Actions
     @IBAction func Login(_ sender: Any) {
         
+        if emailField.text!.isEmpty {
+            self.createAlert(alertTitle: "Empty Field", message: Constants.Errors.usernameEmpty, actionStyle: .default, actionTitle: "Okay")
+        } else if passwordField.text!.isEmpty {
+            self.createAlert(alertTitle: "Empty Field", message: Constants.Errors.passwordEmpty, actionStyle: .default, actionTitle: "Okay")
+        } else {
+            
+        }
     }
     
     @IBAction func Signup(_ sender: Any) {
