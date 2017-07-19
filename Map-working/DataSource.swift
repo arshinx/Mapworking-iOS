@@ -29,6 +29,10 @@ class DataSource: NSObject {
         // Get last 100 locations
         parse.recentHundredLocations() { (studentLocationDict, error) in
             
+            // Error?
+            if let _ = error {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: AppConstants.notifications.studentLocationsPinnedDownError), object: nil)
+            }
         }
     }
 
