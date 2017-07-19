@@ -112,6 +112,12 @@ extension Parse {
              Constants.Parse.StudentLocationKeys.longitude: studentData.location.longitude as AnyObject
         ]
         
+        // Request
+        request(url: url, method: .POST, body: requestBody){ (jsonAsDictionary, error) in
+            
+            
+        }
+        
     }
     
 }
