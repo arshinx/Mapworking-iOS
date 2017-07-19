@@ -38,6 +38,12 @@ extension Parse {
             Constants.Parse.ParameterKeys.limit: Constants.Parse.ParameterValues.hundred as AnyObject,
             Constants.Parse.ParameterKeys.order: Constants.Parse.ParameterValues.recentlyUpdated as AnyObject
             ])
+        
+        // Request
+        request(url: url, method: .GET) { (jsonResDict, error) in
+            
+            
+        }
     }
     
 }
