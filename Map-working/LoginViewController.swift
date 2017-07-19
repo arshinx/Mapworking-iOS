@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordField: UITextField!
     
     // Actions
+    @IBAction func Login(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
