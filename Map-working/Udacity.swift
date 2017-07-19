@@ -108,9 +108,13 @@ extension Udacity {
     // Logout
     func logout(responseClosure: @escaping (_ success: Bool, _ error: String?) -> Void) {
         
-        // Logout URL
+        // Setup
         let logoutURL = sessionManager.urlForRequest(apiMethod: Constants.Udacity.APIMethods.session)
         
+        // Check Cookies & Set Required Headers
+        var xsrfCookie: HTTPCookie? = nil
+        var logoutHeaders = [String : AnyObject]()
+
     }
 }
 
