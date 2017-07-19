@@ -136,6 +136,14 @@ extension Udacity {
                 return
             }
 
+            // Parse JSON
+            if let jsonResDict = jsonResponseDic, let _ = jsonResponseDic?[Constants.Udacity.JSONResponseKeys.session]
+                as? [String : AnyObject] {
+                
+                responseClosure(true, nil)
+                return
+            }
+
             
         }
 
