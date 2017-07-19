@@ -45,6 +45,12 @@ extension Parse {
         // Request
         sessionManager.initiateRequest(Url: url, requestMethod: method, requestHeaders: requestHeaders, requestBody: body) { (data, error) in
             
+            // Data?
+            if let data = data {
+                
+            } else {
+                
+            }
             
         }
         
