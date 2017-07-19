@@ -161,7 +161,18 @@ extension Parse {
         // Request
         request(url: url, method: .PUT, body: requestBody) { (jsonDict , error) in
             
+            // Error?
+            guard error == nil else {
+                responseClosure(false, error)
+                return
+            }
             
+            // Recognized Error?
+            if let jsonResponseDic = jsonDict, let error = jsonResponseDic[Constants.Parse.JSONResponseKeys.error] {
+                
+                responseClosure(false, error as? String)
+                return
+            }
         }
         
     }
