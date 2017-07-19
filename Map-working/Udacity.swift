@@ -122,6 +122,11 @@ extension Udacity {
                 xsrfCookie = cookie
             }
         }
+        
+        // Headers
+        if let xsrfCookie = xsrfCookie {
+            logoutHeaders[APIHeaderKeys.XSRF_Token] = xsrfCookie.value as AnyObject?
+        }
 
     }
 }
