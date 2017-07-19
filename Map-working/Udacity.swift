@@ -114,6 +114,14 @@ extension Udacity {
         // Check Cookies & Set Required Headers
         var xsrfCookie: HTTPCookie? = nil
         var logoutHeaders = [String : AnyObject]()
+        
+        // Cookie and Shared Storage
+        let sharedCookieStorage = HTTPCookieStorage.shared
+        for cookie in sharedCookieStorage.cookies! {
+            if cookie.name == Constants.Udacity.Cookies.XSRF_Token{
+                xsrfCookie = cookie
+            }
+        }
 
     }
 }
