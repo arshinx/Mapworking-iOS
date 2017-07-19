@@ -41,6 +41,20 @@ class LoginViewController: UIViewController {
                         // Get Student Data
                         self.udacity.getStudentData(key: key, responseClosure: { (student, error) in
                             
+                            DispatchQueue.main.async {
+                                
+                                // Student?
+                                if let student = student {
+                                    // Save Student and Complete Login
+                                    self.dataSource.studentUser = student
+                                    self.performSegue(withIdentifier: Constants.Identifiers.loginSegue, sender: self)
+                                } else {
+                                    
+                                    // Invalid Student
+                                    self.createAlert(alertTitle: Constants.Alerts.LoginAlertTitle, message: error!,
+                                                     actionStyle: .cancel, actionTitle: "Dismiss")
+                                }
+                            }
                             
                         })
                     } else {
