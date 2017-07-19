@@ -180,7 +180,7 @@ class Constants {
             static let mediaURL = "mediaURL"
             static let latitude = "latitude"
             static let longitude = "longitude"
-            static let mapString = "mapString"
+            static let location = "location"
         }
         
         // Student Location Keys
