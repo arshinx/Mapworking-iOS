@@ -77,6 +77,17 @@ extension Parse {
                 responseClosure(nil, error)
                 return
             }
+            
+            // Parse Json
+            if let jsonResDict = jsonResDict, let studentLocationDict = jsonResDict[Constants.Parse.JSONResponseKeys.results] as? [[String : AnyObject]] {
+                
+                // Return a student
+                if studentLocationDict.count == 1 {
+                    responseClosure(StudentLocationModel(dictionary: studentLocationDict[0]), nil)
+                    return
+                }
+                
+            }
         }
     }
     
