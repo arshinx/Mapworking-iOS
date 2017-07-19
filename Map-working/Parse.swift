@@ -30,6 +30,7 @@ class Parse {
 // Helper
 extension Parse {
     
+    // ----
     // Request to Parse
     func request(url: URL, method: HTTPMethod, body: [String : AnyObject]? = nil,
                  responseClosure : @escaping (_ jsonAsDictionary: [String:AnyObject]?, _ error: String?) -> Void) {
@@ -52,10 +53,29 @@ extension Parse {
                 responseClosure(jsonResDict, nil)
             } else {
                 
+                 responseClosure(nil, error)
             }
             
         }
         
     }
     
+    // ----
+    // Get last 100 student locations
+    func recentHundredLocations(responseClosure: @escaping (_ studentLocations: [StudentLocationModel]?,
+        _ error: String?) -> Void) {
+        
+        
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
