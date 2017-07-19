@@ -98,7 +98,19 @@ extension Parse {
     // Post Student Location
     func postStudentLocation(studentData: StudentLocationModel, mediaUrl: String, responseClosure: @escaping (_ success: Bool, _ error: String?) -> Void) {
         
+        // Create URL
+        let url = sessionManager.urlForRequest(apiMethod: Constants.Parse.APIMethod.studentLocation)
         
+        // Json Body
+        let requestBody: [String : AnyObject] =
+            [Constants.Parse.StudentLocationKeys.uniqueKey: studentData.student.uniqueKey as AnyObject,
+             Constants.Parse.StudentLocationKeys.firstName: studentData.student.firstName as AnyObject,
+             Constants.Parse.StudentLocationKeys.lastName:  studentData.student.lastName as AnyObject,
+             Constants.Parse.StudentLocationKeys.mapString: studentData.location.location as AnyObject,
+             Constants.Parse.StudentLocationKeys.mediaURL:  mediaUrl as AnyObject,
+             Constants.Parse.StudentLocationKeys.latitude:  studentData.location.latitude as AnyObject,
+             Constants.Parse.StudentLocationKeys.longitude: studentData.location.longitude as AnyObject
+        ]
         
     }
     
