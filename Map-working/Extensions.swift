@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-extension UIAlertController {
+extension UIViewController {
     
-    func createAlert(alertTitle: String, message: String, style: UIAlertControllerStyle, actionTitle: String) {
+    func createAlert(alertTitle: String, message: String, actionStyle: UIAlertActionStyle, actionTitle: String) {
         
         // Create AlertController
         let alert: UIAlertController = UIAlertController(title: alertTitle,
                                                          message: message,
-                                                         preferredStyle: style)
+                                                         preferredStyle: .alert)
         
         // Create Action
-        let action: UIAlertAction = UIAlertAction(title: actionTitle, style: .default)
+        let action: UIAlertAction = UIAlertAction(title: actionTitle, style: actionStyle)
         
         // Add Action
         alert.addAction(action)
