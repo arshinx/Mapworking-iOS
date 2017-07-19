@@ -12,4 +12,10 @@ class Parse {
     
     // Properties
     let sessionManager: SessionManager
+    
+    private static var sharedManager = Parse()
+    class func sharedInstance() -> Parse {
+        return sharedManager
+    }
+    
 }
