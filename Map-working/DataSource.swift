@@ -42,7 +42,7 @@ class DataSource: NSObject {
                 }
                 
                 self.studentLocations = studentLocationDict
-                
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: Constants.Notifications.studentLocationsPinnedDown), object: nil);
 
             }
         }
