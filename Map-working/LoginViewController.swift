@@ -25,6 +25,10 @@ class LoginViewController: UIViewController {
     
     @IBAction func Signup(_ sender: Any) {
         
+        // Open Udacity signup link
+        if let signupURL = URL(string: Constants.Udacity.signupURL), UIApplication.shared.canOpenURL(signupURL) {
+            UIApplication.shared.open(signupURL)
+        }
     }
     
     
