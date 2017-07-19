@@ -29,9 +29,13 @@ class LoginViewController: UIViewController {
             self.createAlert(alertTitle: "Empty Field", message: Constants.Errors.passwordEmpty, actionStyle: .default, actionTitle: "Okay")
         } else {
             
-            // Login
+            // Login to Udacity
             udacity.login(username: emailField.text!, password: passwordField.text!, responseClosure: { (key, error) in
                 
+                // Get Data Asynchronously
+                DispatchQueue.main.async {
+                    
+                }
             })
         }
     }
