@@ -128,7 +128,16 @@ extension Udacity {
             logoutHeaders[Constants.Udacity.APIHeaderKeys.XSRF_Token] = xsrfCookie.value as AnyObject?
         }
         
-        
+        request(url: logoutURL, method: .DELETE) { (jsonResponseDic, error) in
+            
+            // Errors?
+            guard error == nil else {
+                responseClosure(false, error)
+                return
+            }
+
+            
+        }
 
     }
 }
