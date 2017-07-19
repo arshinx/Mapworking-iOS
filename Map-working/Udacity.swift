@@ -128,7 +128,7 @@ extension Udacity {
             logoutHeaders[Constants.Udacity.APIHeaderKeys.XSRF_Token] = xsrfCookie.value as AnyObject?
         }
         
-        request(url: logoutURL, method: .DELETE) { (jsonResponseDic, error) in
+        request(url: logoutURL, method: .DELETE) { (jsonResponseDict, error) in
             
             // Errors?
             guard error == nil else {
@@ -137,8 +137,8 @@ extension Udacity {
             }
 
             // Parse JSON
-            if let jsonResDict = jsonResponseDic, let _ = jsonResponseDic?[Constants.Udacity.JSONResponseKeys.session]
-                as? [String : AnyObject] {
+            if let jsonResponseDict = jsonResponseDict,
+                let _ = jsonResponseDict[Constants.Udacity.JSONResponseKeys.session] as? [String : AnyObject] {
                 
                 responseClosure(true, nil)
                 return
